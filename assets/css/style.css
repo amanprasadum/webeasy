@@ -208,37 +208,36 @@ body {
  /* Feature cards with colored backgrounds - Updated */
 .feature-card {
     background: var(--white);
-    border-radius: 30px;
-    padding: 4rem 3rem;
-    height: 100%;
+    border-radius: 25px;
+    padding: 2.5rem 2rem;
     transition: transform 0.3s, box-shadow 0.3s;
     position: relative;
-    overflow: visible;
+    overflow: hidden;
 }
 
 .feature-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .feature-card h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 400;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     letter-spacing: -0.5px;
 }
 
 .feature-card p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    margin-bottom: 2rem;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
     opacity: 0.9;
     font-weight: 300;
 }
 
 .feature-card a {
     text-decoration: none;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     font-weight: 500;
     display: inline-flex;
     align-items: center;
@@ -259,52 +258,49 @@ body {
 
 .feature-image-container {
     position: relative;
-    margin-top: 2rem;
 }
 
 .feature-card-image {
     width: 100%;
-    height: 400px;
-    object-fit: contain;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
     position: relative;
     z-index: 2;
-    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.15));
 }
 
 .feature-card-cyan {
     background: linear-gradient(135deg, #00BCD4 0%, #0097A7 100%);
     color: white;
-    clip-path: polygon(0 0, 100% 0, 100% 95%, 95% 100%, 0 100%);
 }
 
 .feature-card-yellow {
     background: linear-gradient(135deg, #FFB84D 0%, #FF9800 100%);
     color: #2C3E50;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%, 0 95%);
 }
 
 /* Decorative background shapes */
 .feature-card::before {
     content: '';
     position: absolute;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.08);
-    top: -100px;
-    right: -100px;
+    background: rgba(255, 255, 255, 0.06);
+    top: -80px;
+    right: -80px;
     z-index: 1;
 }
 
 .feature-card::after {
     content: '';
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.05);
-    bottom: -50px;
-    left: -50px;
+    background: rgba(255, 255, 255, 0.04);
+    bottom: -40px;
+    left: -40px;
     z-index: 1;
 }
 
