@@ -597,7 +597,7 @@ footer a:hover {
     padding: 5rem 0;
 }
 
-.section-title {
+/* .section-title {
     font-size: 2.2rem;
     font-weight: 400;
     color: var(--dark);
@@ -608,4 +608,87 @@ footer a:hover {
     color: var(--text-gray);
     font-size: 1.125rem;
     margin-bottom: 3rem;
+} */
+
+/* Section headings - decorative and modern */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--dark);
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-orange), var(--accent-green));
+    border-radius: 2px;
+}
+
+.section-title.center::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-subtitle {
+    color: var(--text-gray);
+    font-size: 1.125rem;
+    margin-bottom: 3rem;
+    font-weight: 300;
+    line-height: 1.7;
+}
+
+/* Alternative decorative style */
+.section-title-alt {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--dark);
+    margin-bottom: 1rem;
+    position: relative;
+    letter-spacing: -0.5px;
+}
+
+.section-title-alt::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 40px;
+    height: 4px;
+    background: var(--accent-green);
+    border-radius: 2px;
+}
+
+.section-title-alt.center::before {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Gradient text style */
+.section-title-gradient {
+    font-size: 2.5rem;
+    font-weight: 400;
+    background: linear-gradient(135deg, var(--primary-orange), var(--accent-green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+    letter-spacing: -0.5px;
+}
+
+/* Modern minimal style */
+.section-title-minimal {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--dark);
+    margin-bottom: 1rem;
+    padding-left: 20px;
+    border-left: 4px solid var(--accent-green);
+    letter-spacing: -0.5px;
 }
