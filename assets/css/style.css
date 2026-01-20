@@ -212,7 +212,7 @@ body {
 
 .feature-card {
     background: var(--white);
-    border-radius: 25px;
+    border-radius: 50px;
     padding: 2.5rem 2rem;
     position: relative;
     overflow: hidden;
