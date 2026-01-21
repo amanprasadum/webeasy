@@ -582,7 +582,7 @@ body {
 }
 
 .dropdown-item:hover {
-    background: var(--logo-red);
+    background: var(--light-bg);
     color: var(--primary-orange);
 }
 
