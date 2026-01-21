@@ -583,7 +583,7 @@ body {
 
 .dropdown-item:hover {
     background: var(--light-bg);
-    color: var(--primary-orange);
+    color: var(--logo-red);
 }
 
 /* Client logos section */
