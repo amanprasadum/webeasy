@@ -1,383 +1,386 @@
  .codexaman-hero-section {
-            min-height: 100vh;
-            padding: 60px 0;
-            position: relative;
-            overflow: hidden;
-            background: #ffffff;
-        }
-        
-        .codexaman-content-wrapper {
-            position: relative;
-            z-index: 2;
-            padding-right: 30px;
-        }
-        
-        .codexaman-hero-title {
-            font-size: 4rem;
-            font-weight: 900;
-            color: #1a1a1a;
-            line-height: 1.2;
-            margin-bottom: 25px;
-            animation: codexaman-slideUp 0.8s ease-out 0.2s both;
-            letter-spacing: -1px;
-        }
-        
-        .codexaman-hero-description {
-            font-size: 1.15rem;
-            color: #666666;
-            line-height: 1.7;
-            margin-bottom: 40px;
-            animation: codexaman-slideUp 0.8s ease-out 0.4s both;
-            font-weight: 400;
-        }
-        
-        .codexaman-button-group {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-            animation: codexaman-slideUp 0.8s ease-out 0.6s both;
-        }
-        
-        .codexaman-btn-primary {
-            background: #4CAF50;
-            color: #fff;
-            padding: 16px 35px;
-            border-radius: 6px;
-            font-weight: 600;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            transition: all 0.3s ease;
-            border: 2px solid #4CAF50;
-            box-shadow: 0 4px 12px rgba(76, 175, 80, 0.2);
-            text-transform: uppercase;
-            font-size: 14px;
-            letter-spacing: 0.5px;
-        }
-        
-        .codexaman-btn-primary:hover {
-            background: #45a049;
-            border-color: #45a049;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(76, 175, 80, 0.3);
-            color: #fff;
-        }
-        
-        .codexaman-btn-secondary {
-            background: transparent;
-            color: #333;
-            padding: 16px 35px;
-            border-radius: 6px;
-            font-weight: 600;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            transition: all 0.3s ease;
-            border: 2px solid #333;
-            text-transform: uppercase;
-            font-size: 14px;
-            letter-spacing: 0.5px;
-        }
-        
-        .codexaman-btn-secondary:hover {
-            background: #333;
-            color: #fff;
-            transform: translateY(-2px);
-        }
-        
-        /* Laptop mockup - CSS based for better control */
-        .codexaman-laptop-wrapper {
-            position: relative;
-            z-index: 2;
-            animation: codexaman-fadeIn 1s ease-out 0.8s both;
-        }
-        
-        .codexaman-laptop {
-            position: relative;
-            width: 100%;
-            max-width: 600px;
-            height: 380px;
-            margin: 0 auto;
-            background: #ddd;
-            border: 15px solid #3f3f41;
-            border-top: 20px solid #3f3f41;
-            border-radius: 14px 14px 0 0;
-            box-shadow: 0 0 0 1px #d1d2d4;
-        }
-        
-        /* Laptop base - bottom part */
-        .codexaman-laptop:before {
-            content: "";
-            bottom: -35px;
-            background: #d1d2d4;
-            height: 20px;
-            width: 130%;
-            border-radius: 0 0 10px 10px;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        
-        /* Camera dot */
-        .codexaman-laptop:after {
-            content: "";
-            top: -12px;
-            width: 4px;
-            height: 4px;
-            background: #d1d2d4;
-            border-radius: 50%;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        
-        /* Screen area - where slider appears */
-        .codexaman-screen {
-            width: 100%;
-            height: 100%;
-            background: #1a1a1a;
-            overflow: hidden;
-            position: relative;
-        }
-        
-        /* Laptop base keyboard area */
-        .codexaman-base {
-            bottom: -25px;
-            background: #d1d2d4;
-            height: 10px;
-            width: 130%;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        
-        .codexaman-base:before {
-            content: "";
-            border-radius: 0 0 10px 10px;
-            height: 10px;
-            width: 100px;
-            background: #bcbdc1;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        
-        .codexaman-base:after {
-            content: "";
-            position: absolute;
-            height: 20px;
-            width: 100%;
-            border-radius: 0 0 10px 10px;
-            box-shadow: 0px 10px 36px -2px rgba(0, 0, 0, 0.4);
-        }
-        
-        /* Slider inside screen */
-        .codexaman-premium-slider {
-            width: 100%;
-            height: 100%;
-            position: relative;
-        }
-        
-        .codexaman-slide {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            transition: opacity 1s ease-in-out;
-        }
-        
-        .codexaman-slide.codexaman-active {
-            opacity: 1;
-        }
-        
-        .codexaman-slide img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-        /* Slider dots */
-        .codexaman-slider-dots {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 10px;
-            z-index: 10;
-        }
-        
-        .codexaman-dot {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.4);
-            cursor: pointer;
-            transition: all 0.3s ease;
-            border: 2px solid rgba(255, 255, 255, 0.6);
-        }
-        
-        .codexaman-dot.codexaman-active {
-            background: #fff;
-            width: 30px;
-            border-radius: 5px;
-        }
+     min-height: 100vh;
+     padding: 60px 0;
+     position: relative;
+     overflow: hidden;
+     background: #ffffff;
+ }
 
-        /* Who Did We Help - Full Width Below */
-        .codexaman-clients-section {
-            margin-top: 80px;
-            padding-top: 60px;
-            border-top: 1px solid #e0e0e0;
-            animation: codexaman-slideUp 0.8s ease-out 1s both;
-        }
+ .codexaman-content-wrapper {
+     position: relative;
+     z-index: 2;
+     padding-right: 30px;
+ }
 
-        .codexaman-clients-title {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #1a1a1a;
-            margin-bottom: 10px;
-            position: relative;
-            display: inline-block;
-        }
+ .codexaman-hero-title {
+     font-size: 4rem;
+     font-weight: 900;
+     color: #1a1a1a;
+     line-height: 1.2;
+     margin-bottom: 25px;
+     animation: codexaman-slideUp 0.8s ease-out 0.2s both;
+     letter-spacing: -1px;
+ }
 
-        .codexaman-clients-title::after {
-            content: '';
-            position: absolute;
-            bottom: -8px;
-            left: 0;
-            width: 60px;
-            height: 3px;
-            background: #4CAF50;
-        }
+ .codexaman-hero-description {
+     font-size: 1.15rem;
+     color: #666666;
+     line-height: 1.7;
+     margin-bottom: 40px;
+     animation: codexaman-slideUp 0.8s ease-out 0.4s both;
+     font-weight: 400;
+ }
 
-        .codexaman-clients-logos {
-            display: flex;
-            align-items: center;
-            gap: 50px;
-            margin-top: 40px;
-            overflow: hidden;
-            position: relative;
-        }
+ .codexaman-button-group {
+     display: flex;
+     gap: 15px;
+     flex-wrap: wrap;
+     animation: codexaman-slideUp 0.8s ease-out 0.6s both;
+ }
 
-        .codexaman-clients-track {
-            display: flex;
-            gap: 50px;
-            animation: codexaman-scroll 20s linear infinite;
-        }
+ .codexaman-btn-primary {
+     background: #4CAF50;
+     color: #fff;
+     padding: 16px 35px;
+     border-radius: 6px;
+     font-weight: 600;
+     text-decoration: none;
+     display: inline-flex;
+     align-items: center;
+     gap: 10px;
+     transition: all 0.3s ease;
+     border: 2px solid #4CAF50;
+     box-shadow: 0 4px 12px rgba(76, 175, 80, 0.2);
+     text-transform: uppercase;
+     font-size: 14px;
+     letter-spacing: 0.5px;
+ }
 
-        @keyframes codexaman-scroll {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(-50%);
-            }
-        }
+ .codexaman-btn-primary:hover {
+     background: #45a049;
+     border-color: #45a049;
+     transform: translateY(-2px);
+     box-shadow: 0 6px 20px rgba(76, 175, 80, 0.3);
+     color: #fff;
+ }
 
-        .codexaman-client-logo {
-            height: 45px;
-            filter: grayscale(100%);
-            opacity: 0.6;
-            transition: all 0.3s ease;
-            flex-shrink: 0;
-        }
+ .codexaman-btn-secondary {
+     background: transparent;
+     color: #333;
+     padding: 16px 35px;
+     border-radius: 60px;
+     font-weight: 600;
+     text-decoration: none;
+     display: inline-flex;
+     align-items: center;
+     gap: 10px;
+     transition: all 0.3s ease;
+     border: 1px solid #333;
+     text-transform: uppercase;
+     font-size: 14px;
+     letter-spacing: 0.5px;
+ }
 
-        .codexaman-client-logo:hover {
-            filter: grayscale(0%);
-            opacity: 1;
-            transform: scale(1.1);
-        }
+ .codexaman-btn-secondary:hover {
+     background: #333;
+     color: #fff;
+     transform: translateY(-2px);
+ }
 
-        .codexaman-clients-logos:hover .codexaman-clients-track {
-            animation-play-state: paused;
-        }
-        
-        @keyframes codexaman-slideUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        @keyframes codexaman-fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-        
-        /* Responsive */
-        @media (max-width: 991px) {
-            .codexaman-hero-title {
-                font-size: 2.8rem;
-            }
-            
-            .codexaman-content-wrapper {
-                padding-right: 0;
-                margin-bottom: 50px;
-                text-align: center;
-            }
-            
-            .codexaman-button-group {
-                justify-content: center;
-            }
-            
-            .codexaman-laptop {
-                max-width: 500px;
-                height: 320px;
-            }
+ /* Laptop mockup - CSS based for better control */
+ .codexaman-laptop-wrapper {
+     position: relative;
+     z-index: 2;
+     animation: codexaman-fadeIn 1s ease-out 0.8s both;
+ }
 
-            .codexaman-clients-section {
-                margin-top: 60px;
-            }
+ .codexaman-laptop {
+     position: relative;
+     width: 100%;
+     max-width: 600px;
+     height: 380px;
+     margin: 0 auto;
+     background: #ddd;
+     border: 15px solid #3f3f41;
+     border-top: 20px solid #3f3f41;
+     border-radius: 14px 14px 0 0;
+     box-shadow: 0 0 0 1px #d1d2d4;
+ }
 
-            .codexaman-clients-logos {
-                gap: 35px;
-            }
-        }
-        
-        @media (max-width: 576px) {
-            .codexaman-hero-title {
-                font-size: 2.2rem;
-            }
-            
-            .codexaman-hero-description {
-                font-size: 1rem;
-            }
-            
-            .codexaman-btn-primary,
-            .codexaman-btn-secondary {
-                padding: 14px 25px;
-                font-size: 13px;
-            }
-            
-            .codexaman-laptop {
-                max-width: 350px;
-                height: 230px;
-            }
+ /* Laptop base - bottom part */
+ .codexaman-laptop:before {
+     content: "";
+     bottom: -35px;
+     background: #d1d2d4;
+     height: 20px;
+     width: 130%;
+     border-radius: 0 0 10px 10px;
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+ }
 
-            .codexaman-clients-title {
-                font-size: 1.3rem;
-            }
+ /* Camera dot */
+ .codexaman-laptop:after {
+     content: "";
+     top: -12px;
+     width: 4px;
+     height: 4px;
+     background: #d1d2d4;
+     border-radius: 50%;
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+ }
 
-            .codexaman-client-logo {
-                height: 35px;
-            }
+ /* Screen area - where slider appears */
+ .codexaman-screen {
+     width: 100%;
+     height: 100%;
+     background: #1a1a1a;
+     overflow: hidden;
+     position: relative;
+ }
 
-            .codexaman-clients-logos {
-                gap: 30px;
-            }
+ /* Laptop base keyboard area */
+ .codexaman-base {
+     bottom: -25px;
+     background: #d1d2d4;
+     height: 10px;
+     width: 130%;
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+ }
 
-            .codexaman-clients-section {
-                margin-top: 40px;
-                padding-top: 40px;
-            }
-        }
+ .codexaman-base:before {
+     content: "";
+     border-radius: 0 0 10px 10px;
+     height: 10px;
+     width: 100px;
+     background: #bcbdc1;
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+ }
+
+ .codexaman-base:after {
+     content: "";
+     position: absolute;
+     height: 20px;
+     width: 100%;
+     border-radius: 0 0 10px 10px;
+     box-shadow: 0px 10px 36px -2px rgba(0, 0, 0, 0.4);
+ }
+
+ /* Slider inside screen */
+ .codexaman-premium-slider {
+     width: 100%;
+     height: 100%;
+     position: relative;
+ }
+
+ .codexaman-slide {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     opacity: 0;
+     transition: opacity 1s ease-in-out;
+ }
+
+ .codexaman-slide.codexaman-active {
+     opacity: 1;
+ }
+
+ .codexaman-slide img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
+
+ /* Slider dots */
+ .codexaman-slider-dots {
+     position: absolute;
+     bottom: 20px;
+     left: 50%;
+     transform: translateX(-50%);
+     display: flex;
+     gap: 10px;
+     z-index: 10;
+ }
+
+ .codexaman-dot {
+     width: 10px;
+     height: 10px;
+     border-radius: 50%;
+     background: rgba(255, 255, 255, 0.4);
+     cursor: pointer;
+     transition: all 0.3s ease;
+     border: 2px solid rgba(255, 255, 255, 0.6);
+ }
+
+ .codexaman-dot.codexaman-active {
+     background: #fff;
+     width: 30px;
+     border-radius: 5px;
+ }
+
+ /* Who Did We Help - Full Width Below */
+ .codexaman-clients-section {
+     margin-top: 80px;
+     padding-top: 60px;
+     border-top: 1px solid #e0e0e0;
+     animation: codexaman-slideUp 0.8s ease-out 1s both;
+ }
+
+ .codexaman-clients-title {
+     font-size: 1.5rem;
+     font-weight: 700;
+     color: #1a1a1a;
+     margin-bottom: 10px;
+     position: relative;
+     display: inline-block;
+ }
+
+ .codexaman-clients-title::after {
+     content: '';
+     position: absolute;
+     bottom: -8px;
+     left: 0;
+     width: 60px;
+     height: 3px;
+     background: #4CAF50;
+ }
+
+ .codexaman-clients-logos {
+     display: flex;
+     align-items: center;
+     gap: 50px;
+     margin-top: 40px;
+     overflow: hidden;
+     position: relative;
+ }
+
+ .codexaman-clients-track {
+     display: flex;
+     gap: 50px;
+     animation: codexaman-scroll 20s linear infinite;
+ }
+
+ @keyframes codexaman-scroll {
+     0% {
+         transform: translateX(0);
+     }
+
+     100% {
+         transform: translateX(-50%);
+     }
+ }
+
+ .codexaman-client-logo {
+     height: 45px;
+     filter: grayscale(100%);
+     opacity: 0.6;
+     transition: all 0.3s ease;
+     flex-shrink: 0;
+ }
+
+ .codexaman-client-logo:hover {
+     filter: grayscale(0%);
+     opacity: 1;
+     transform: scale(1.1);
+ }
+
+ .codexaman-clients-logos:hover .codexaman-clients-track {
+     animation-play-state: paused;
+ }
+
+ @keyframes codexaman-slideUp {
+     from {
+         opacity: 0;
+         transform: translateY(30px);
+     }
+
+     to {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+
+ @keyframes codexaman-fadeIn {
+     from {
+         opacity: 0;
+     }
+
+     to {
+         opacity: 1;
+     }
+ }
+
+ /* Responsive */
+ @media (max-width: 991px) {
+     .codexaman-hero-title {
+         font-size: 2.8rem;
+     }
+
+     .codexaman-content-wrapper {
+         padding-right: 0;
+         margin-bottom: 50px;
+         text-align: center;
+     }
+
+     .codexaman-button-group {
+         justify-content: center;
+     }
+
+     .codexaman-laptop {
+         max-width: 500px;
+         height: 320px;
+     }
+
+     .codexaman-clients-section {
+         margin-top: 60px;
+     }
+
+     .codexaman-clients-logos {
+         gap: 35px;
+     }
+ }
+
+ @media (max-width: 576px) {
+     .codexaman-hero-title {
+         font-size: 2.2rem;
+     }
+
+     .codexaman-hero-description {
+         font-size: 1rem;
+     }
+
+     .codexaman-btn-primary,
+     .codexaman-btn-secondary {
+         padding: 14px 25px;
+         font-size: 13px;
+     }
+
+     .codexaman-laptop {
+         max-width: 350px;
+         height: 230px;
+     }
+
+     .codexaman-clients-title {
+         font-size: 1.3rem;
+     }
+
+     .codexaman-client-logo {
+         height: 35px;
+     }
+
+     .codexaman-clients-logos {
+         gap: 30px;
+     }
+
+     .codexaman-clients-section {
+         margin-top: 40px;
+         padding-top: 40px;
+     }
+ }
