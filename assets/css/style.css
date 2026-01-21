@@ -28,7 +28,7 @@ body {
 /* Navbar styling - clean and minimal */
 .navbar {
     background: var(--white);
-    padding: 1rem 0;
+    /* padding: 1rem 0; */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
