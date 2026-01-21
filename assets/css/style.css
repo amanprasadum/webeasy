@@ -55,7 +55,9 @@ body {
 .nav-link:hover {
     color: var(--accent-green);
 }
-
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--accent-green) !important;
+}
 /* Mega menu styling */
 .mega-menu {
     position: static;
