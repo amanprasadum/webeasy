@@ -110,7 +110,8 @@ body {
 }
 
 .mega-menu-content a:hover {
-    color: var(--primary-orange);
+    /* color: var(--primary-orange); */
+    color: var(--logo-red);
     padding-left: 10px;
 }
 
