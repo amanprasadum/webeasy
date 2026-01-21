@@ -86,8 +86,8 @@ body {
 .mega-menu-title {
     color: var(--logo-red);
     font-size: 0.875rem;
-    font-weight: 700;
-    text-transform: uppercase;
+    font-weight: 500;
+    /* text-transform: uppercase; */
     letter-spacing: 0.5px;
     margin-bottom: 1.25rem;
     display: flex;
