@@ -58,6 +58,9 @@ body {
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
     color: var(--accent-green) !important;
 }
+.nav-link:focus-visible {
+    box-shadow: none !important;
+}
 /* Mega menu styling */
 .mega-menu {
     position: static;
