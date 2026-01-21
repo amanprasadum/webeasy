@@ -42,7 +42,7 @@ body {
     height: 57px;
 }
 .navbar-brand :focus-visible{
-    box-shadow: none !important;
+    outline: none !important;
 }
 .nav-link {
     /* color: var(--dark); */
