@@ -293,83 +293,8 @@
             </div>
         </div>
     </section>
-<!-- new hero section  -->
-    <section class="codexaman-hero-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <!-- Left column - Text content -->
-                <div class="col-lg-6">
-                    <div class="codexaman-content-wrapper">
-                        <span class="codexaman-hero-badge">
-                            <i class="fas fa-star"></i> Premium Web Solutions
-                        </span>
 
-                        <h1 class="codexaman-hero-title">
-                            We Create <span class="codexaman-gradient-text">Stunning</span> Digital Experiences
-                        </h1>
 
-                        <p class="codexaman-hero-description">
-                            Transform your vision into reality with our cutting-edge web design and development
-                            services. We craft beautiful, responsive websites that captivate your audience and drive
-                            results.
-                        </p>
-
-                        <div class="codexaman-button-group">
-                            <a href="#" class="codexaman-btn-primary">
-                                Get Started
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                            <a href="#" class="codexaman-btn-secondary">
-                                View Portfolio
-                                <i class="fas fa-play"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right column - Laptop mockup with slider -->
-                <div class="col-lg-6">
-                    <div class="codexaman-laptop-wrapper">
-                        <div class="codexaman-laptop">
-                            <div class="codexaman-screen">
-                                <div class="codexaman-premium-slider">
-                                    <!-- Portfolio slides -->
-                                    <div class="codexaman-slide codexaman-active">
-                                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
-                                            alt="Analytics Dashboard">
-                                    </div>
-
-                                    <div class="codexaman-slide">
-                                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop"
-                                            alt="Mobile App Design">
-                                    </div>
-
-                                    <div class="codexaman-slide">
-                                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop"
-                                            alt="Web Development">
-                                    </div>
-
-                                    <div class="codexaman-slide">
-                                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop"
-                                            alt="Business Strategy">
-                                    </div>
-
-                                    <!-- Slider dots -->
-                                    <div class="codexaman-slider-dots">
-                                        <span class="codexaman-dot codexaman-active" data-slide="0"></span>
-                                        <span class="codexaman-dot" data-slide="1"></span>
-                                        <span class="codexaman-dot" data-slide="2"></span>
-                                        <span class="codexaman-dot" data-slide="3"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="codexaman-base"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Trust badges - client logos -->
     <section class="trust-badges">
@@ -1229,35 +1154,7 @@
             });
         });
     </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const slides = document.querySelectorAll('.codexaman-slide');
-            const dots = document.querySelectorAll('.codexaman-dot');
-            let currentSlide = 0;
-
-            function showSlide(index) {
-                slides.forEach(slide => slide.classList.remove('codexaman-active'));
-                dots.forEach(dot => dot.classList.remove('codexaman-active'));
-
-                slides[index].classList.add('codexaman-active');
-                dots[index].classList.add('codexaman-active');
-            }
-
-            function nextSlide() {
-                currentSlide = (currentSlide + 1) % slides.length;
-                showSlide(currentSlide);
-            }
-
-            setInterval(nextSlide, 4000);
-
-            dots.forEach((dot, index) => {
-                dot.addEventListener('click', () => {
-                    currentSlide = index;
-                    showSlide(currentSlide);
-                });
-            });
-        });
-    </script>
+    
 </body>
 
 </html>
