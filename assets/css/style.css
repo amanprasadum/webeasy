@@ -100,13 +100,13 @@ body {
 }
 
 .mega-menu-content a {
-    color: var(--dark);
+   color: #8b8b8b;
     text-decoration: none;
     display: flex;
     align-items: center;
     padding: 0.75rem 0;
     transition: all 0.3s;
-    font-size: 0.95rem;
+    font-size: 14px;
 }
 
 .mega-menu-content a:hover {
