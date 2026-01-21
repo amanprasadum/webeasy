@@ -44,7 +44,10 @@ body {
 .navbar-brand img {
     height: 57px;
 }
-
+.navbar-brand :focus-visible{
+    box-shadow: none !important;
+    
+}
 .nav-link {
     /* color: var(--dark); */
     color: var(--white);
