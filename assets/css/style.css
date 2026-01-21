@@ -84,7 +84,7 @@ body {
 }
 
 .mega-menu-title {
-    color: var(--primary-orange);
+    color: var(--logo-red);
     font-size: 0.875rem;
     font-weight: 700;
     text-transform: uppercase;
