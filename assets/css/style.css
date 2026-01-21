@@ -178,23 +178,7 @@ body {
     color: white;
 }
 
-/* Trust badges section */
-.trust-badges {
-    background: white;
-    padding: 2rem 0;
-}
-
-.trust-badge-img {
-    height: 40px;
-    opacity: 0.6;
-    transition: opacity 0.3s;
-    filter: grayscale(100%);
-}
-
-.trust-badge-img:hover {
-    opacity: 1;
-    filter: grayscale(0%);
-}
+/* ----------- */
 
 /* Feature cards with colored backgrounds */
 /* .feature-card {
