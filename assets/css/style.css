@@ -19,13 +19,20 @@
     box-sizing: border-box;
 }
 
-html,
+/* html,
 body {
     font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
     color: var(--dark);
     line-height: 1.6;
     overflow-x: hidden;
+} */
+
+body {
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
+
 /* Navbar styling - clean and minimal */
 .navbar {
     /* background: var(--white); */
@@ -33,17 +40,21 @@ body {
     /* padding: 1rem 0; */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
+
 .navbar-brand {
     font-weight: 700;
     font-size: 1.5rem;
     color: var(--primary-orange);
 }
+
 .navbar-brand img {
     height: 57px;
 }
-.navbar-brand :focus-visible{
+
+.navbar-brand :focus-visible {
     outline: none !important;
 }
+
 .nav-link {
     /* color: var(--dark); */
     color: var(--white);
@@ -51,19 +62,24 @@ body {
     padding: 0.5rem 1rem;
     transition: color 0.3s;
 }
-.nav-link:focus{
+
+.nav-link:focus {
     color: #ffffff !important;
 }
 
 .nav-link:hover {
     color: var(--accent-green);
 }
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
     color: var(--accent-green) !important;
 }
+
 .nav-link:focus-visible {
     box-shadow: none !important;
 }
+
 /* Mega menu styling */
 .mega-menu {
     position: static;
@@ -102,7 +118,7 @@ body {
 }
 
 .mega-menu-content a {
-   color: #8b8b8b;
+    color: #8b8b8b;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -217,7 +233,7 @@ body {
     background: linear-to-br from-yellow-300 to-orange-400;
     color: var(--dark);
 } */
- /* Feature cards with colored backgrounds - Updated */
+/* Feature cards with colored backgrounds - Updated */
 /* =========================
    Feature Card Base
 ========================= */
@@ -296,15 +312,13 @@ body {
     z-index: 2;
     transition: transform 0.5s ease, filter 0.5s ease;
     filter:
-        drop-shadow(0 0 30px rgba(255, 255, 255, 0.6))
-        drop-shadow(0 20px 40px rgba(255, 200, 120, 0.35));
+        drop-shadow(0 0 30px rgba(255, 255, 255, 0.6)) drop-shadow(0 20px 40px rgba(255, 200, 120, 0.35));
 }
 
 .feature-card:hover .feature-card-image {
     transform: translateY(-6px) scale(1.02);
     filter:
-        drop-shadow(0 0 45px rgba(255, 255, 255, 0.8))
-        drop-shadow(0 30px 60px rgba(255, 200, 120, 0.45));
+        drop-shadow(0 0 45px rgba(255, 255, 255, 0.8)) drop-shadow(0 30px 60px rgba(255, 200, 120, 0.45));
 }
 
 /* =========================
