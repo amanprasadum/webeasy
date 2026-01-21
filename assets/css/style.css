@@ -752,3 +752,37 @@ footer a:hover {
     border-left: 4px solid var(--accent-green);
     letter-spacing: -0.5px;
 }
+/* Laptop mockup container */
+.laptop-mockup {
+    position: relative;
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.laptop-frame {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+
+.laptop-screen {
+    position: absolute;
+    top: 3.5%;
+    left: 13.5%;
+    width: 73%;
+    height: 81%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.laptop-screen .owl-carousel .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.laptop-screen .owl-nav,
+.laptop-screen .owl-dots {
+    display: none;
+}
